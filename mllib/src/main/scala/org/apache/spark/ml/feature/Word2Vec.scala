@@ -56,7 +56,7 @@ private[feature] trait Word2VecBase extends Params
    */
   final val windowSize = new IntParam(
     this, "windowSize", "the window size (context words from [-window, window])")
-  setDefault(windowSize -> 5)
+  setDefault(windowSize -> 2)
 
   /** @group expertGetParam */
   def getWindowSize: Int = $(windowSize)
